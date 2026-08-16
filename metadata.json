@@ -1,0 +1,6 @@
+{
+  "name": "Our First Year - Together",
+  "description": "An interactive cinematic anniversary experience guided by 22, featuring memory montages, atmospheric storytelling, and music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

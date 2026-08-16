@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-script {
+    font-family: 'Caveat', cursive;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.45)) drop-shadow(0 0 30px rgba(236, 72, 153, 0.25));
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(56, 189, 248, 0.75)) drop-shadow(0 0 50px rgba(236, 72, 153, 0.5));
+  }
+}
+
+@keyframes stardustTwinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: stardustTwinkle 2.5s ease-in-out infinite;
+}
+
+.scanline-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.4) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.06),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.06)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
