@@ -14,6 +14,7 @@ import { VideoPlayerSection } from './components/VideoPlayerModal';
 import { PortalDoor } from './components/PortalDoor';
 import { ChapterNav } from './components/ChapterNav';
 import { BarbaTransitionCurtain } from './components/BarbaTransitionCurtain';
+import { OvercomingTrialsHeartEffect } from './components/OvercomingTrialsHeartEffect';
 import { preloadImage, preloadImages } from './utils/imageLoader';
 import { useLenis } from './utils/useLenis';
 import { 
@@ -684,6 +685,13 @@ export default function App() {
         size={phase === 'WALK_INTRO_22' ? 'large' : 'normal'}
       />
 
+      {/* Floating Heart Symbol of Overcoming Trials Animation */}
+      <AnimatePresence>
+        {phase === 'SCENE_2_NATURE_PEAK' && subStep === 9 && (
+          <OvercomingTrialsHeartEffect key="overcoming-trials-hearts" />
+        )}
+      </AnimatePresence>
+
       {/* Static CRT Glitch Transition */}
       <AnimatePresence>
         {phase === 'STATIC_GLITCH' && (
@@ -1260,7 +1268,7 @@ export default function App() {
               </motion.div>
             )}
 
-            {/* Step 7-9: Flood Scene & Reflection (3 photos) */}
+            {/* Step 7-9: Flood Scene & Reflection (3 photos / video) */}
             {(subStep === 7 || subStep === 8 || subStep === 9) && (
               <motion.div
                 initial={{ opacity: 0 }}

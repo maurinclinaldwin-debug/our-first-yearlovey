@@ -9,6 +9,7 @@ interface AutoScrollPhotoGridProps {
   getImageUrl: (id: string, fallback: string) => string;
   variant?: 'polaroid' | 'chat-screenshot' | 'cinematic';
   autoScrollInterval?: number; // ms, default 3500ms
+  autoplayVideo?: boolean;
   className?: string;
 }
 
@@ -17,6 +18,7 @@ export const AutoScrollPhotoGrid: React.FC<AutoScrollPhotoGridProps> = ({
   getImageUrl,
   variant = 'polaroid',
   autoScrollInterval = 3200,
+  autoplayVideo = false,
   className = '',
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -93,6 +95,7 @@ export const AutoScrollPhotoGrid: React.FC<AutoScrollPhotoGridProps> = ({
             variant={variant}
             customImageUrl={getImageUrl(m.id, m.fallbackUrl)}
             delay={idx * 0.15}
+            autoplayVideo={autoplayVideo}
             onClick={() => setSelectedPhoto(m)}
           />
         ))}
@@ -135,6 +138,7 @@ export const AutoScrollPhotoGrid: React.FC<AutoScrollPhotoGridProps> = ({
                 variant={variant}
                 customImageUrl={getImageUrl(m.id, m.fallbackUrl)}
                 delay={idx * 0.08}
+                autoplayVideo={autoplayVideo}
                 onClick={() => setSelectedPhoto(m)}
                 className="h-full"
               />
@@ -196,6 +200,7 @@ export const AutoScrollPhotoGrid: React.FC<AutoScrollPhotoGridProps> = ({
             variant={variant}
             customImageUrl={getImageUrl(m.id, m.fallbackUrl)}
             delay={idx * 0.1}
+            autoplayVideo={autoplayVideo}
             onClick={() => setSelectedPhoto(m)}
           />
         ))}
@@ -264,7 +269,7 @@ const PhotoLightboxModal: React.FC<PhotoLightboxModalProps> = ({
             <div className="flex items-center space-x-2">
               {selectedPhoto.isVideo && (
                 <a
-                  href={`https://drive.google.com/file/d/${selectedPhoto.driveId || '1BtPQK_OIhMflJk2pTYIgUEZDJckqH9gF'}/view?usp=sharing`}
+                  href={`https://drive.google.com/file/d/${selectedPhoto.driveId || '1FttW1UtcHqF0H0fbrCly3fBRDZVD4F5t'}/view?usp=sharing`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-1 px-2.5 py-1 rounded-full bg-white/10 hover:bg-white/20 text-neutral-200 hover:text-white text-xs font-mono transition-colors"
@@ -303,12 +308,21 @@ const PhotoLightboxModal: React.FC<PhotoLightboxModalProps> = ({
             )}
           </div>
 
-          {/* Caption footer */}
-          {selectedPhoto.caption && (
-            <div className="p-3 sm:p-4 bg-neutral-950/95 border-t border-white/10 text-center">
-              <p className="text-xs sm:text-sm text-rose-200/90 font-serif italic">
-                "{selectedPhoto.caption}"
-              </p>
+          {/* Caption & Handwritten Note footer */}
+          {(selectedPhoto.caption || selectedPhoto.notes) && (
+            <div className="p-3 sm:p-4 bg-neutral-950/95 border-t border-white/10 text-center space-y-2">
+              {selectedPhoto.caption && (
+                <p className="text-xs sm:text-sm text-rose-200/90 font-serif italic">
+                  "{selectedPhoto.caption}"
+                </p>
+              )}
+              {selectedPhoto.notes && (
+                <div className="inline-block mx-auto px-4 py-2 bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-950 rounded-xl border border-amber-300 shadow-md">
+                  <p className="font-script text-base sm:text-lg text-amber-950 font-medium">
+                    📝 "{selectedPhoto.notes}"
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </motion.div>

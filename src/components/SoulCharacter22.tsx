@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Crown, Heart } from 'lucide-react';
 import { audioEngine } from '../audio/audioEngine';
 import { ThreeSoulCanvas } from './ThreeSoulCanvas';
+import { StoryPhase } from '../types';
 
 export type CharacterEmotion =
   | 'idle'
@@ -36,6 +37,8 @@ interface SoulCharacter22Props {
   position?: CharacterPosition;
   isClickable?: boolean;
   size?: 'normal' | 'compact' | 'large';
+  currentPhase?: StoryPhase;
+  subStep?: number;
 }
 
 interface FloatingHeartItem {
@@ -65,12 +68,44 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
   const [localHearts, setLocalHearts] = useState<{ id: number; x: number; y: number }[]>([]);
   const [floatingHearts, setFloatingHearts] = useState<FloatingHeartItem[]>([]);
   const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 640);
+  const [displayedDialogue, setDisplayedDialogue] = useState(dialogue || '');
+  const [isTyping, setIsTyping] = useState(false);
 
   const prevPositionRef = useRef(position);
 
   const isInLoveMode = emotion === 'inlove' || emotion === 'heart-eyes';
 
-  // 1. Mobile Screen Width Listener for Responsive Positioning
+  // 1. Typewriter animation effect whenever dialogue updates
+  useEffect(() => {
+    if (!dialogue) {
+      setDisplayedDialogue('');
+      setIsTyping(false);
+      return;
+    }
+
+    setDisplayedDialogue('');
+    setIsTyping(true);
+
+    let charIndex = 0;
+    const targetText = dialogue;
+    const totalChars = targetText.length;
+    // Responsive typing cadence: fast and lively (~18-26ms/char)
+    const charSpeed = Math.max(16, Math.min(26, Math.floor(1000 / Math.max(1, totalChars))));
+
+    const interval = setInterval(() => {
+      charIndex++;
+      if (charIndex <= totalChars) {
+        setDisplayedDialogue(targetText.slice(0, charIndex));
+      } else {
+        setIsTyping(false);
+        clearInterval(interval);
+      }
+    }, charSpeed);
+
+    return () => clearInterval(interval);
+  }, [dialogue]);
+
+  // 2. Mobile Screen Width Listener for Responsive Positioning
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640);
@@ -79,7 +114,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // 2. Natural blinking interval loop
+  // 3. Natural blinking interval loop
   useEffect(() => {
     const blinkInterval = setInterval(() => {
       setIsBlinking(true);
@@ -89,7 +124,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     return () => clearInterval(blinkInterval);
   }, []);
 
-  // 3. Trigger celestial aura burst upon spawning
+  // 4. Trigger celestial aura burst upon spawning
   useEffect(() => {
     if (prevPositionRef.current === 'hidden' && position !== 'hidden') {
       setIsBarbaSpawning(true);
@@ -99,7 +134,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     prevPositionRef.current = position;
   }, [position]);
 
-  // 4. Continuous floating hearts spawning when emotion is inlove or heart-eyes
+  // 5. Continuous floating hearts spawning when emotion is inlove or heart-eyes
   useEffect(() => {
     if (!isInLoveMode || position === 'hidden') {
       setFloatingHearts([]);
@@ -126,7 +161,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     return () => clearInterval(interval);
   }, [isInLoveMode, position]);
 
-  // 5. Click Reaction
+  // 6. Click Reaction
   const handleClick = (e: React.MouseEvent) => {
     if (!isClickable || position === 'hidden') return;
     audioEngine.playCharacterSpawn();
@@ -166,7 +201,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     },
     'top-right': {
       top: isMobile ? '24%' : '30%',
-      left: isMobile ? '68%' : '80%', // Shifted safely inwards from right edge on mobile
+      left: isMobile ? '68%' : '80%',
       x: '-50%',
       y: '-50%',
       scale: (isMobile ? 0.75 : 0.82) * sizeMultiplier,
@@ -175,7 +210,7 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
     },
     'bottom-right': {
       top: isMobile ? '68%' : '72%',
-      left: isMobile ? '68%' : '80%', // Shifted safely inwards from right edge on mobile
+      left: isMobile ? '68%' : '80%',
       x: '-50%',
       y: '-50%',
       scale: (isMobile ? 0.75 : 0.82) * sizeMultiplier,
@@ -263,7 +298,15 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
                   <div className="absolute -inset-1 rounded-[24px] sm:rounded-[34px] bg-gradient-to-r from-cyan-500/30 via-pink-500/20 to-sky-400/30 blur-md sm:blur-lg opacity-75 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
 
                   {/* Core Thought Cloud Container with responsive padding */}
-                  <div className="relative w-full px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-[22px] sm:rounded-[30px] backdrop-blur-2xl bg-neutral-950/90 border border-cyan-300/45 shadow-[0_12px_40px_rgba(34,211,238,0.22)] text-neutral-100">
+                  <div
+                    onClick={() => {
+                      if (dialogue) {
+                        setDisplayedDialogue(dialogue);
+                        setIsTyping(false);
+                      }
+                    }}
+                    className="relative w-full px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-[22px] sm:rounded-[30px] backdrop-blur-2xl bg-neutral-950/90 border border-cyan-300/45 shadow-[0_12px_40px_rgba(34,211,238,0.22)] text-neutral-100 cursor-pointer"
+                  >
                     {/* Header: Thought Indicator Badge */}
                     <div
                       className={`flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-400/50 text-[9px] sm:text-[11px] font-sans tracking-wide text-cyan-200 shadow-[0_0_10px_rgba(34,211,238,0.35)] w-fit mb-1.5 ${
@@ -290,9 +333,16 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
                       </span>
                     </div>
 
-                    {/* Instant Glanceable Text Display (shrunk slightly for mobile viewport perfection) */}
+                    {/* Instant Glanceable Typewriter Text Display */}
                     <p className="text-xs sm:text-sm md:text-[15px] font-medium leading-relaxed text-white tracking-wide font-sans break-words drop-shadow-sm">
-                      "{dialogue}"
+                      "{displayedDialogue}"
+                      {isTyping && (
+                        <motion.span
+                          animate={{ opacity: [1, 0, 1] }}
+                          transition={{ repeat: Infinity, duration: 0.5, ease: 'linear' }}
+                          className="inline-block w-1.5 h-3.5 sm:h-4 ml-1 align-middle bg-cyan-400 rounded-sm shadow-[0_0_8px_rgba(34,211,238,0.9)]"
+                        />
+                      )}
                     </p>
 
                     {subtext && (
@@ -342,7 +392,6 @@ export const SoulCharacter22: React.FC<SoulCharacter22Props> = ({
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleClick}
             className="relative flex flex-col items-center justify-center cursor-pointer group pointer-events-auto select-none"
-            title="22 • Your Celestial Soul & Heart Companion"
           >
             {/* Ambient Backlight Glow */}
             <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-cyan-400/25 via-pink-400/20 to-amber-200/20 blur-3xl pointer-events-none animate-pulse"></div>

@@ -26,6 +26,7 @@ export interface MemoryItem {
   localPath?: string;
   fallbackUrl: string;
   caption?: string;
+  notes?: string; // Handwritten-style sweet secret memory notes on hover
   orientation?: 'landscape' | 'portrait' | 'square';
   tag?: string;
 }

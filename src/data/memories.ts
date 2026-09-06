@@ -11,6 +11,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '10Vv9RMxrD42ZHfnfC5xvw7o-34IXNcb_',
     driveUrl: getDriveDirectUrl('10Vv9RMxrD42ZHfnfC5xvw7o-34IXNcb_'),
     fallbackUrl: getDriveThumbnailUrl('10Vv9RMxrD42ZHfnfC5xvw7o-34IXNcb_', 1200),
+    notes: 'Ang unang sulyap na nagbago sa buong mundo ko... ✨',
     tag: 'Chapter 01'
   },
   {
@@ -21,6 +22,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1smj64ajtPckAIyyWY5oqHY8RkzgKl7pB',
     driveUrl: getDriveDirectUrl('1smj64ajtPckAIyyWY5oqHY8RkzgKl7pB'),
     fallbackUrl: getDriveThumbnailUrl('1smj64ajtPckAIyyWY5oqHY8RkzgKl7pB', 1200),
+    notes: 'Sumisinag ang araw kasabay ng pinakamagandang ngiti mo ☀️',
     tag: 'Warmth'
   },
   {
@@ -31,6 +33,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1e9tm3i8Ay1Mtog8BQ9F4gucB08rFCGzz',
     driveUrl: getDriveDirectUrl('1e9tm3i8Ay1Mtog8BQ9F4gucB08rFCGzz'),
     fallbackUrl: getDriveThumbnailUrl('1e9tm3i8Ay1Mtog8BQ9F4gucB08rFCGzz', 1200),
+    notes: 'Yung mga simpleng tinginan na nagpapabilis ng tibok ng puso ko. 💓',
     tag: 'Moments'
   },
   {
@@ -41,6 +44,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '16Y45AClQV-QPJFJopdeHItKZjuIiWhyQ',
     driveUrl: getDriveDirectUrl('16Y45AClQV-QPJFJopdeHItKZjuIiWhyQ'),
     fallbackUrl: getDriveThumbnailUrl('16Y45AClQV-QPJFJopdeHItKZjuIiWhyQ', 1200),
+    notes: 'Golden hour moments with my favorite person in the universe.',
     tag: 'Golden Hour'
   },
   {
@@ -51,6 +55,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '17CgSJN7s8VPcxH0SDpsgV_TNCSJRG0FK',
     driveUrl: getDriveDirectUrl('17CgSJN7s8VPcxH0SDpsgV_TNCSJRG0FK'),
     fallbackUrl: getDriveThumbnailUrl('17CgSJN7s8VPcxH0SDpsgV_TNCSJRG0FK', 1200),
+    notes: 'Walang katapusang asaran at kulitan na hinding-hindi ko ipagpapalit! 😂',
     tag: 'Joy'
   },
   {
@@ -61,6 +66,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1jehmZJD-ZLvCNuFxf1L1hV6yf-7PbeA8',
     driveUrl: getDriveDirectUrl('1jehmZJD-ZLvCNuFxf1L1hV6yf-7PbeA8'),
     fallbackUrl: getDriveThumbnailUrl('1jehmZJD-ZLvCNuFxf1L1hV6yf-7PbeA8', 1200),
+    notes: 'The comfort of having your fingers intertwined with mine. 🤝',
     tag: 'Together'
   },
   {
@@ -71,6 +77,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1UKJWBGXqk9GJbTZQA4WkhzOvU7HbRL63',
     driveUrl: getDriveDirectUrl('1UKJWBGXqk9GJbTZQA4WkhzOvU7HbRL63'),
     fallbackUrl: getDriveThumbnailUrl('1UKJWBGXqk9GJbTZQA4WkhzOvU7HbRL63', 1200),
+    notes: 'Overlooking the whole city, but my eyes are only on you. 🌌',
     tag: 'Adventure'
   },
   {
@@ -81,6 +88,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1htHOS8VrZesd5pfALYWW2sZmj4qpG766',
     driveUrl: getDriveDirectUrl('1htHOS8VrZesd5pfALYWW2sZmj4qpG766'),
     fallbackUrl: getDriveThumbnailUrl('1htHOS8VrZesd5pfALYWW2sZmj4qpG766', 1200),
+    notes: 'Strumming chords and humming our song: Palagi. 🎵',
     tag: 'Melody'
   },
   {
@@ -91,6 +99,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1vKLad_BoPdOCs7buS7KFnOyrCD3NCg1S',
     driveUrl: getDriveDirectUrl('1vKLad_BoPdOCs7buS7KFnOyrCD3NCg1S'),
     fallbackUrl: getDriveThumbnailUrl('1vKLad_BoPdOCs7buS7KFnOyrCD3NCg1S', 1200),
+    notes: 'Kahit bumuhos man ang ulan, ikaw ang aking kanlungan.',
     tag: 'Resilience'
   },
   {
@@ -101,6 +110,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '17CmnfpTyf37daQGpTJx5egsOWNBoxuYs',
     driveUrl: getDriveDirectUrl('17CmnfpTyf37daQGpTJx5egsOWNBoxuYs'),
     fallbackUrl: getDriveThumbnailUrl('17CmnfpTyf37daQGpTJx5egsOWNBoxuYs', 1200),
+    notes: '365 days of choosing you, loving you, and wanting forever. ❤️',
     tag: '365 Days'
   },
 
@@ -115,6 +125,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveUrl: getDriveDirectUrl('1ss4_U5-wb3q5mwJDBDJ_gTox1-n9FKso'),
     fallbackUrl: getDriveThumbnailUrl('1ss4_U5-wb3q5mwJDBDJ_gTox1-n9FKso', 1200),
     caption: 'Silently living in our own worlds...',
+    notes: 'Doon pa lang, palihim na kitang tinitingnan sa hallway... napaka-tahimik pero ang lakas ng dating mo. 🥺',
     orientation: 'landscape'
   },
   {
@@ -127,6 +138,7 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveUrl: getDriveDirectUrl('1MzCPgBPsaEv0WdqwgYjTjeIoLLN9T2-3'),
     fallbackUrl: getDriveThumbnailUrl('1MzCPgBPsaEv0WdqwgYjTjeIoLLN9T2-3', 1200),
     caption: 'Knowing that there was no chance of confession...',
+    notes: 'Sino mag-aakala na yung tahimik kong crush sa room noon, asawa/forever ko na pala ngayon? ✨',
     orientation: 'landscape'
   },
 
@@ -277,7 +289,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '10Hh_4jZl6WhtBs0Z4Nq8rlbesIFJdElX',
     driveUrl: getDriveDirectUrl('10Hh_4jZl6WhtBs0Z4Nq8rlbesIFJdElX'),
     fallbackUrl: getDriveThumbnailUrl('10Hh_4jZl6WhtBs0Z4Nq8rlbesIFJdElX', 1200),
-    caption: '"Uy, kamusta?..." The message that started everything.'
+    caption: '"Uy, kamusta?..." The message that started everything.',
+    notes: 'Nanginginig pa mga daliri ko habang tinatype to hehehe 💌'
   },
   {
     id: 'chat-start-2',
@@ -288,7 +301,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1IhRybTtCvtfaVmjGz68JtGHdBRm9l28v',
     driveUrl: getDriveDirectUrl('1IhRybTtCvtfaVmjGz68JtGHdBRm9l28v'),
     fallbackUrl: getDriveThumbnailUrl('1IhRybTtCvtfaVmjGz68JtGHdBRm9l28v', 1200),
-    caption: 'Hours flew by like minutes.'
+    caption: 'Hours flew by like minutes.',
+    notes: 'Puyat na puyat pero ayaw pa matulog kasi kausap ka hanggang madaling araw 🌙'
   },
   {
     id: 'chat-start-3',
@@ -299,7 +313,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '13cKC8I8X6yw8OGqmsXpmF9YJPcNf8tcT',
     driveUrl: getDriveDirectUrl('13cKC8I8X6yw8OGqmsXpmF9YJPcNf8tcT'),
     fallbackUrl: getDriveThumbnailUrl('13cKC8I8X6yw8OGqmsXpmF9YJPcNf8tcT', 1200),
-    caption: 'Finding joy in every word.'
+    caption: 'Finding joy in every word.',
+    notes: 'Yung tawa mo na nagpapagaan ng buong araw ko! 🥰'
   },
   // Fast Forward Chats
   {
@@ -311,7 +326,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1LcZv5ZLHlAF4xJjpj7GLnnCkbL9ZOZe1',
     driveUrl: getDriveDirectUrl('1LcZv5ZLHlAF4xJjpj7GLnnCkbL9ZOZe1'),
     fallbackUrl: getDriveThumbnailUrl('1LcZv5ZLHlAF4xJjpj7GLnnCkbL9ZOZe1', 1200),
-    caption: 'Daily routines started revolving around each other.'
+    caption: 'Daily routines started revolving around each other.',
+    notes: 'Dito ko na-realize na hindi na kumpleto araw ko kapag hindi kita nakakausap.'
   },
   {
     id: 'chat-ff-2',
@@ -322,7 +338,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1Uj-hP9qizvJJZMjnqHExH3A1CJ3ErCR8',
     driveUrl: getDriveDirectUrl('1Uj-hP9qizvJJZMjnqHExH3A1CJ3ErCR8'),
     fallbackUrl: getDriveThumbnailUrl('1Uj-hP9qizvJJZMjnqHExH3A1CJ3ErCR8', 1200),
-    caption: 'From classmates to confidants.'
+    caption: 'From classmates to confidants.',
+    notes: 'Lahat ng kwento at pangarap ko, sayo ko lang nasasabi nang buong-buo.'
   },
   {
     id: 'chat-ff-3',
@@ -333,7 +350,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1ouno4yg3xS_LJHwp5wFAtX7H3ZqvSCvZ',
     driveUrl: getDriveDirectUrl('1ouno4yg3xS_LJHwp5wFAtX7H3ZqvSCvZ'),
     fallbackUrl: getDriveThumbnailUrl('1ouno4yg3xS_LJHwp5wFAtX7H3ZqvSCvZ', 1200),
-    caption: 'Hearts beating a little faster.'
+    caption: 'Hearts beating a little faster.',
+    notes: 'Unspoken words, but the heart already knew who it belongs to. 💫'
   },
   // Lakbay ng Sanaysay & Official Sep 21 / 22 2025
   {
@@ -345,7 +363,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1K6FTMgGokgZFoHVOTxOO24FO2l66FU3X',
     driveUrl: getDriveDirectUrl('1K6FTMgGokgZFoHVOTxOO24FO2l66FU3X'),
     fallbackUrl: getDriveThumbnailUrl('1K6FTMgGokgZFoHVOTxOO24FO2l66FU3X', 1200),
-    caption: 'Sep 21: Confession of Admirations.'
+    caption: 'Sep 21: Confession of Admirations.',
+    notes: 'Lakbay ng Sanaysay - ang pinakamagandang assignment sa buong buhay ko! 📖'
   },
   {
     id: 'chat-sanaysay-2',
@@ -356,7 +375,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1iIeEoZCHDegEEylstflq5zDHhfA3QDVh',
     driveUrl: getDriveDirectUrl('1iIeEoZCHDegEEylstflq5zDHhfA3QDVh'),
     fallbackUrl: getDriveThumbnailUrl('1iIeEoZCHDegEEylstflq5zDHhfA3QDVh', 1200),
-    caption: 'Sep 22: The official start of expressing feelings (Double meaning of 22!)'
+    caption: 'Sep 22: The official start of expressing feelings (Double meaning of 22!)',
+    notes: 'Sep 22: The magical 22nd that created our own universe! 🌟'
   },
   {
     id: 'chat-sanaysay-3',
@@ -367,7 +387,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '14LxCjkVoAQteqIpld69Nm0MquD5QxMG3',
     driveUrl: getDriveDirectUrl('14LxCjkVoAQteqIpld69Nm0MquD5QxMG3'),
     fallbackUrl: getDriveThumbnailUrl('14LxCjkVoAQteqIpld69Nm0MquD5QxMG3', 1200),
-    caption: '"I love you lovey heheh"'
+    caption: '"I love you lovey heheh"',
+    notes: 'From Jamaica to Maica to Lovey... my favorite name for you! 💖'
   },
 
   // 5. Special Early Memories: Her Solo, Reed, Singing & Guitar, Park Hangouts
@@ -379,7 +400,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1wjJYm-DknD2fCe26uJf6K5qf3hu5pNWK',
     driveUrl: getDriveDirectUrl('1wjJYm-DknD2fCe26uJf6K5qf3hu5pNWK'),
     fallbackUrl: getDriveThumbnailUrl('1wjJYm-DknD2fCe26uJf6K5qf3hu5pNWK', 1200),
-    caption: 'That unforgettable smile.'
+    caption: 'That unforgettable smile.',
+    notes: 'Pinaka-cute na reed sa balat ng lupa! Sobrang ganda mo dito lovey 🌸'
   },
   {
     id: 'special-her-2',
@@ -389,7 +411,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '18-cRpZniuYCN2liwFjXmlyA6Iyktl29I',
     driveUrl: getDriveDirectUrl('18-cRpZniuYCN2liwFjXmlyA6Iyktl29I'),
     fallbackUrl: getDriveThumbnailUrl('18-cRpZniuYCN2liwFjXmlyA6Iyktl29I', 1200),
-    caption: 'Pure uninhibited laughter.'
+    caption: 'Pure uninhibited laughter.',
+    notes: 'Your candid laugh is my absolute favorite sound in the whole world.'
   },
   {
     id: 'special-music-1',
@@ -399,7 +422,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1EqUHzqoQPF9_G6W8FT6XpqFTE3EyA3h8',
     driveUrl: getDriveDirectUrl('1EqUHzqoQPF9_G6W8FT6XpqFTE3EyA3h8'),
     fallbackUrl: getDriveThumbnailUrl('1EqUHzqoQPF9_G6W8FT6XpqFTE3EyA3h8', 1200),
-    caption: 'Strumming chords and singing Palagi.'
+    caption: 'Strumming chords and singing Palagi.',
+    notes: 'Palagi habang tumutugtog ng gitara kasama ka... pure peace & magic 🎸'
   },
   {
     id: 'special-music-2',
@@ -409,7 +433,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1AViBTSTQY142f1_tQcBIGWRIHwRbQvoM',
     driveUrl: getDriveDirectUrl('1AViBTSTQY142f1_tQcBIGWRIHwRbQvoM'),
     fallbackUrl: getDriveThumbnailUrl('1AViBTSTQY142f1_tQcBIGWRIHwRbQvoM', 1200),
-    caption: 'The melody of our shared world.'
+    caption: 'The melody of our shared world.',
+    notes: 'Kahit sintunado minsan, basta ikaw kasabay ko, perfectly in tune. 🎶'
   },
   {
     id: 'special-park-1',
@@ -419,7 +444,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1NFQLAcF7lU07YkeoA3JULgzibrnp1fuV',
     driveUrl: getDriveDirectUrl('1NFQLAcF7lU07YkeoA3JULgzibrnp1fuV'),
     fallbackUrl: getDriveThumbnailUrl('1NFQLAcF7lU07YkeoA3JULgzibrnp1fuV', 1200),
-    caption: 'Gentle breeze and deep talks.'
+    caption: 'Gentle breeze and deep talks.',
+    notes: 'Hawak-kamay sa lilim ng mga puno, simpleng ligaya. 🍃'
   },
   {
     id: 'special-park-2',
@@ -429,7 +455,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1h-67bSIskSl71x99-4OAoG1_viB9HRug',
     driveUrl: getDriveDirectUrl('1h-67bSIskSl71x99-4OAoG1_viB9HRug'),
     fallbackUrl: getDriveThumbnailUrl('1h-67bSIskSl71x99-4OAoG1_viB9HRug', 1200),
-    caption: 'Time moving slow and peaceful.'
+    caption: 'Time moving slow and peaceful.',
+    notes: 'Sana huminto na lang ang oras nung nakatambay tayo sa damo.'
   },
   {
     id: 'special-park-3',
@@ -439,7 +466,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1xCCNzzB7C2yqACzUdeHXGEo5DW_8ApzX',
     driveUrl: getDriveDirectUrl('1xCCNzzB7C2yqACzUdeHXGEo5DW_8ApzX'),
     fallbackUrl: getDriveThumbnailUrl('1xCCNzzB7C2yqACzUdeHXGEo5DW_8ApzX', 1200),
-    caption: 'Ready for mountains and adventures.'
+    caption: 'Ready for mountains and adventures.',
+    notes: 'Dito nag-umpisa ang mga pangarap nating libutin ang mga bundok!'
   },
 
   // 6. Section 2: Nature, Mountains, Peak Experiences
@@ -452,7 +480,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1SGBs73H1KmwjTg4PUOOe3Wt9_Gzx9Mns',
     driveUrl: getDriveDirectUrl('1SGBs73H1KmwjTg4PUOOe3Wt9_Gzx9Mns'),
     fallbackUrl: getDriveThumbnailUrl('1SGBs73H1KmwjTg4PUOOe3Wt9_Gzx9Mns', 1200),
-    caption: 'The rushing crystal waters and cold mist.'
+    caption: 'The rushing crystal waters and cold mist.',
+    notes: 'First date natin sa Cuanus Falls! Babalikan natin to promissse 🌊'
   },
   {
     id: 'nature-cuanus-2',
@@ -462,7 +491,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1a8KNj7rRamDk5gI55nt9DYybADnM8bPl',
     driveUrl: getDriveDirectUrl('1a8KNj7rRamDk5gI55nt9DYybADnM8bPl'),
     fallbackUrl: getDriveThumbnailUrl('1a8KNj7rRamDk5gI55nt9DYybADnM8bPl', 1200),
-    caption: 'An unforgettable first adventure.'
+    caption: 'An unforgettable first adventure.',
+    notes: 'Malamig ang tubig pero mainit ang hawak ng mga kamay natin.'
   },
 
   // Gullas Mountain Drive (5 photos)
@@ -474,7 +504,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1QwoufGwY4pSYL8asWopfjqeb316c0JVz',
     driveUrl: getDriveDirectUrl('1QwoufGwY4pSYL8asWopfjqeb316c0JVz'),
     fallbackUrl: getDriveThumbnailUrl('1QwoufGwY4pSYL8asWopfjqeb316c0JVz', 1200),
-    caption: 'Winding mountain roads with cool evening wind.'
+    caption: 'Winding mountain roads with cool evening wind.',
+    notes: 'City lights sa baba habang kayakap ka sa malamig na hangin ng Gullas 🌃'
   },
   {
     id: 'nature-gullas-2',
@@ -484,7 +515,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1Q8kaE11NJsvdhNo21DzU7cC1JAZjJLHR',
     driveUrl: getDriveDirectUrl('1Q8kaE11NJsvdhNo21DzU7cC1JAZjJLHR'),
     fallbackUrl: getDriveThumbnailUrl('1Q8kaE11NJsvdhNo21DzU7cC1JAZjJLHR', 1200),
-    caption: 'Looking down at the glowing city below.'
+    caption: 'Looking down at the glowing city below.',
+    notes: 'Overlooking the valley, feeling on top of the world with you.'
   },
   {
     id: 'nature-gullas-3',
@@ -494,7 +526,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1HOpZKzZRVJjlNWeqS7dwoAjORJ8nXsVo',
     driveUrl: getDriveDirectUrl('1HOpZKzZRVJjlNWeqS7dwoAjORJ8nXsVo'),
     fallbackUrl: getDriveThumbnailUrl('1HOpZKzZRVJjlNWeqS7dwoAjORJ8nXsVo', 1200),
-    caption: 'Golden hues painting the peaks.'
+    caption: 'Golden hues painting the peaks.',
+    notes: 'Walang kasing ganda ng sunset kapag ikaw ang kasama kong nanonood.'
   },
   {
     id: 'nature-gullas-4',
@@ -504,7 +537,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1_FxFqYvt4FSxauKQsCvBZP-UoAH6Xg0Z',
     driveUrl: getDriveDirectUrl('1_FxFqYvt4FSxauKQsCvBZP-UoAH6Xg0Z'),
     fallbackUrl: getDriveThumbnailUrl('1_FxFqYvt4FSxauKQsCvBZP-UoAH6Xg0Z', 1200),
-    caption: 'Sharing thoughts with the skyline.'
+    caption: 'Sharing thoughts with the skyline.',
+    notes: 'Tahimik lang pero damang-dama ang kapayapaan sa puso.'
   },
   {
     id: 'nature-gullas-5',
@@ -514,7 +548,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1Kkp_LAqrwMtYgpCuaoPBFY7ERofQ94_W',
     driveUrl: getDriveDirectUrl('1Kkp_LAqrwMtYgpCuaoPBFY7ERofQ94_W'),
     fallbackUrl: getDriveThumbnailUrl('1Kkp_LAqrwMtYgpCuaoPBFY7ERofQ94_W', 1200),
-    caption: 'Every ride felt like home.'
+    caption: 'Every ride felt like home.',
+    notes: 'Ang byahe pauwi na ayaw nating dalawa na matapos.'
   },
 
   // Breakup Message Reflection (May 30, 2025)
@@ -527,7 +562,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1CGEDeh8tAxj-YkM6ZZOK2AfUvP82JmNF',
     driveUrl: getDriveDirectUrl('1CGEDeh8tAxj-YkM6ZZOK2AfUvP82JmNF'),
     fallbackUrl: getDriveThumbnailUrl('1CGEDeh8tAxj-YkM6ZZOK2AfUvP82JmNF', 1200),
-    caption: 'I understand ra this lovey... hindi lang ka move on nung gabi na yun.'
+    caption: 'I understand ra this lovey... hindi lang ka move on nung gabi na yun.',
+    notes: 'Sobrang bigat ng gabing ito... pero napatunayan nating totoo ang pagmamahal natin.'
   },
   {
     id: 'nature-breakup-2',
@@ -538,7 +574,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1f9OAAvbYVNFm88AS7iaz6r4DmiPwaUqS',
     driveUrl: getDriveDirectUrl('1f9OAAvbYVNFm88AS7iaz6r4DmiPwaUqS'),
     fallbackUrl: getDriveThumbnailUrl('1f9OAAvbYVNFm88AS7iaz6r4DmiPwaUqS', 1200),
-    caption: 'Pero... fate wasn\'t finished with our story.'
+    caption: 'Pero... fate wasn\'t finished with our story.',
+    notes: 'Fate held us close, kahit sa pinakamadilim na pagsubok. 🕊️'
   },
 
   // Pangilatan Reconciliation (3 photos)
@@ -550,7 +587,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1gleN1sZluzU_GKRbTjkNsW8jDC3mNOgG',
     driveUrl: getDriveDirectUrl('1gleN1sZluzU_GKRbTjkNsW8jDC3mNOgG'),
     fallbackUrl: getDriveThumbnailUrl('1gleN1sZluzU_GKRbTjkNsW8jDC3mNOgG', 1200),
-    caption: 'You allowed us to meet and talk.'
+    caption: 'You allowed us to meet and talk.',
+    notes: 'Sobrang pasasalamat ko nung pumayag kang mag-usap tayo sa Pangilatan. 🥺'
   },
   {
     id: 'nature-pangilatan-2',
@@ -560,7 +598,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1u_qxAj__UHQSKXG43JMPx6TTliAqB3eQ',
     driveUrl: getDriveDirectUrl('1u_qxAj__UHQSKXG43JMPx6TTliAqB3eQ'),
     fallbackUrl: getDriveThumbnailUrl('1u_qxAj__UHQSKXG43JMPx6TTliAqB3eQ', 1200),
-    caption: 'Really glad & thankful nga ni fight back ka.'
+    caption: 'Really glad & thankful nga ni fight back ka.',
+    notes: 'Salamat at hindi ka sumuko. Salamat sa paglaban para sa ating dalawa.'
   },
   {
     id: 'nature-pangilatan-3',
@@ -570,7 +609,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1cHq9Lne2xLk53LPD_DfD6MFrQHLCNKTl',
     driveUrl: getDriveDirectUrl('1cHq9Lne2xLk53LPD_DfD6MFrQHLCNKTl'),
     fallbackUrl: getDriveThumbnailUrl('1cHq9Lne2xLk53LPD_DfD6MFrQHLCNKTl', 1200),
-    caption: 'Holding on tighter than ever.'
+    caption: 'Holding on tighter than ever.',
+    notes: 'Mas mahigpit ang kapit natin ngayon kaysa kailanman. ❤️'
   },
 
   // Flood Intervention Trial (2 photos & 1 video)
@@ -582,7 +622,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1zlB87psN66mghBimWzH8uqTy8OXtHUF4',
     driveUrl: getDriveDirectUrl('1zlB87psN66mghBimWzH8uqTy8OXtHUF4'),
     fallbackUrl: getDriveThumbnailUrl('1zlB87psN66mghBimWzH8uqTy8OXtHUF4', 1200),
-    caption: 'Pinaka kaba at pinaka maganda sa lahat ng memories.'
+    caption: 'Pinaka kaba at pinaka maganda sa lahat ng memories.',
+    notes: 'Biglaang baha at bagyo! Pero kalmado kasi magkahawak-kamay tayo 🌧️'
   },
   {
     id: 'nature-flood-2',
@@ -592,18 +633,20 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1MiDp-dQn0-SfU223zPPnEtws8Xe4vPOQ',
     driveUrl: getDriveDirectUrl('1MiDp-dQn0-SfU223zPPnEtws8Xe4vPOQ'),
     fallbackUrl: getDriveThumbnailUrl('1MiDp-dQn0-SfU223zPPnEtws8Xe4vPOQ', 1200),
-    caption: 'Wala tayong binlame, nag-isip ng solusyon.'
+    caption: 'Wala tayong binlame, nag-isip ng solusyon.',
+    notes: 'Walang sisihan, nag-isip agad ng paraan. Eto yung nagpatatag satin!'
   },
   {
     id: 'nature-flood-3',
     category: 'flood',
     title: 'The Great Flood Trial (Video Clip)',
     subtitle: 'Unexpected trials... we don\'t need to overcome alone',
-    driveId: '1BtPQK_OIhMflJk2pTYIgUEZDJckqH9gF',
+    driveId: '1FttW1UtcHqF0H0fbrCly3fBRDZVD4F5t',
     isVideo: true,
-    videoPreviewUrl: 'https://drive.google.com/file/d/1BtPQK_OIhMflJk2pTYIgUEZDJckqH9gF/preview',
-    fallbackUrl: getDriveThumbnailUrl('1BtPQK_OIhMflJk2pTYIgUEZDJckqH9gF', 1200),
-    caption: 'Mag remind pud nato sa future obstacles nga dapat in-ani.'
+    videoPreviewUrl: 'https://drive.google.com/file/d/1FttW1UtcHqF0H0fbrCly3fBRDZVD4F5t/preview',
+    fallbackUrl: getDriveThumbnailUrl('1FttW1UtcHqF0H0fbrCly3fBRDZVD4F5t', 1200),
+    caption: 'Mag remind pud nato sa future obstacles nga dapat in-ani.',
+    notes: 'Ang video na magpapaalala sa atin na kahit anong bagyo, kaya nating lagpasan 🌊'
   },
 
   // 7. Section 3: First Real Argument (3 photos)
@@ -615,7 +658,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '1LZflhAxY5Jc91wHzB90hXLNEOZpHefZ2',
     driveUrl: getDriveDirectUrl('1LZflhAxY5Jc91wHzB90hXLNEOZpHefZ2'),
     fallbackUrl: getDriveThumbnailUrl('1LZflhAxY5Jc91wHzB90hXLNEOZpHefZ2', 1200),
-    caption: 'Misunderstandings that taught us how to communicate.'
+    caption: 'Misunderstandings that taught us how to communicate.',
+    notes: 'First real argument natin hahah! Natuto tayong makinig at umunawa.'
   },
   {
     id: 'argument-2',
@@ -625,7 +669,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '139VyPunnN4ZdRQ9diM9H8Po-7rVjBz96',
     driveUrl: getDriveDirectUrl('139VyPunnN4ZdRQ9diM9H8Po-7rVjBz96'),
     fallbackUrl: getDriveThumbnailUrl('139VyPunnN4ZdRQ9diM9H8Po-7rVjBz96', 1200),
-    caption: 'Choosing love over being right.'
+    caption: 'Choosing love over being right.',
+    notes: 'Choosing to understand each other instead of fighting to be right.'
   },
   {
     id: 'argument-3',
@@ -635,7 +680,8 @@ export const INITIAL_MEMORIES: MemoryItem[] = [
     driveId: '12qvAsHZk-RQZ0vYM3IBaRmV1l24pm-M7',
     driveUrl: getDriveDirectUrl('12qvAsHZk-RQZ0vYM3IBaRmV1l24pm-M7'),
     fallbackUrl: getDriveThumbnailUrl('12qvAsHZk-RQZ0vYM3IBaRmV1l24pm-M7', 1200),
-    caption: 'Stronger and closer after every talk.'
+    caption: 'Stronger and closer after every talk.',
+    notes: 'Love you talaga lovey, every misunderstanding just brings us closer together 🫂'
   }
 ];
 

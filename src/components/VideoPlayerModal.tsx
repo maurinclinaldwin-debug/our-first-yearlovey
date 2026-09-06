@@ -8,8 +8,8 @@ interface VideoPlayerSectionProps {
 }
 
 export const VideoPlayerSection: React.FC<VideoPlayerSectionProps> = ({
-  initialVideoUrl = 'https://drive.google.com/file/d/1QwXfgW2mGHUNJteFJ0mCLbaCYxd48cyo/preview',
-  driveViewUrl = 'https://drive.google.com/file/d/1QwXfgW2mGHUNJteFJ0mCLbaCYxd48cyo/view?usp=sharing',
+  initialVideoUrl = 'https://drive.google.com/file/d/1p1t3L5l38rpCWJLXuggat9uFbdC_WUzP/preview',
+  driveViewUrl = 'https://drive.google.com/file/d/1p1t3L5l38rpCWJLXuggat9uFbdC_WUzP/view?usp=sharing',
 }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const videoUrl = initialVideoUrl;
